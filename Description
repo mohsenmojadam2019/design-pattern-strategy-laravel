@@ -1,0 +1,28 @@
+``The Strategy Pattern``
+The Strategy's main goal is to define a family of algorithms that perform a similar operation, each with a different implementation.
+It splits each of the Algorithms (called strategies) in its own class, so we can use them through our whole application, test them easier,
+and even change the algorithms at run time.
+
+The Strategy pattern is composed of two main elements:
+
+A Strategy Interface: This interface guarantees that all the strategies implemented will follow the same rules (with the same contract), 
+and they will be interchangeable on our code.
+The concrete strategy classes: Those are the concrete implementations of our Strategies. 
+We have one class with one/x method(s) defined in our interface. We can have as many strategies as necessary.
+Context class: This is the class that knows only the Strategy interface,
+it owns an instance of a concrete Strategy, and it is responsible for running the Algorithm.
+
+
+Example
+
++-------------+-----+
+|  Category   | Tax |
++-------------+-----+
+| Foods       | 20% |
+| Electronics | 40% |
+| Books       |  0% |
++-------------+-----+
+
+
+
+
